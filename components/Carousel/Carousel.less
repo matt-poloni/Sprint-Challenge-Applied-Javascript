@@ -18,6 +18,7 @@
     width: 50px;
     height: 50px;
     cursor: pointer;
+    z-index: 1;
     &:hover {
       color: @lambda-times-color-primary;
       background-color: @lambda-times-color-white;
@@ -36,10 +37,14 @@
   }
   img {
     .width-100();
+    height: 100%;
+    object-fit: cover;
     display: none;
+    z-index: 0;
 
     &.currImg {
       display: block;
+      object-fit: cover;
     }
   }
 }

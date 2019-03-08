@@ -54,6 +54,7 @@ body {
   position: fixed;
   height: 44px;
   background-color: #333;
+  z-index: 2;
 }
 .top-bar .container {
   width: 100%;
@@ -281,6 +282,7 @@ body {
   width: 50px;
   height: 50px;
   cursor: pointer;
+  z-index: 1;
 }
 .carousel .left-button:hover,
 .carousel .right-button:hover {
@@ -300,8 +302,12 @@ body {
 }
 .carousel img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
   display: none;
+  z-index: 0;
 }
 .carousel img.currImg {
   display: block;
+  object-fit: cover;
 }

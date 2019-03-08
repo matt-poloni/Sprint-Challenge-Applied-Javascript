@@ -6,7 +6,6 @@ class Carousel {
         this.rightBtn = this.carousel.querySelector('.right-button');
         this.rightBtn.addEventListener('click', this.clickRight.bind(this));
         this.images = this.carousel.querySelectorAll('img');
-        console.log(this.images);
         this.index = 0;
         this.images[this.index].classList.add('currImg');
     }
