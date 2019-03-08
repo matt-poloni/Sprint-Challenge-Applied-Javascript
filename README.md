@@ -32,20 +32,30 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the DOM?
 
+* DOM stands for Document Object Model. The DOM represents the webpage as a series of objects in a tree-like structure, each element being one node on that tree, allowing interaction to propagate from that node up the tree (unless propagation is specifically stopped) and allowing for further manipulation through Javascript.
+
 2. What is an event?
+
+* An event is any interaction that a user has with a webpage that the browser can detect, whether that be pressing a key on the keyboard, clicking somewhere on the page, scrolling up or down the page, or any of many other potential interactions.
 
 3. What is an event listener?
 
+* An event listener lives on a particular element, watching for its specific event to be triggered on that element so that it can then execute its callback function.
+
 4. Why would we convert a NodeList into an Array?
 
+* You may need to convert a NodeList into an array if you need an array method that isn't natively available on a NodeList. For instance, if you need to map over a NodeList, you'd need to pass it through `Array.from()` first, since `.map()` isn't a method on NodeLists. (Although for compatibility with older browsers you may have to use map through `Array.prototype.map()` instead.)
+
 5. What is a component?
+
+* A component is a collection of HTML, CSS, and Javascript that are written to work together to recreate some aspect of the website that shares the same functionality and/or styling over and over again without having to repeat the same code any more than is necessary. Ultimately, they also make the code much more readable for any future developers that may need to look it over.
 
 ### Git Set up
 
 * [x] Fork the project into your GitHub user account
 * [x] Clone the forked project into a directory on your machine
-* [ ] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
-* [ ] You are now ready to build this project with your preferred IDE
+* [x] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
+* [x] You are now ready to build this project with your preferred IDE
 
 ## Minimum Viable Product
 
